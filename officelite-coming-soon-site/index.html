@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./scss/main.css" />
+
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="home">
+        <div class="logo-container">
+          <img class="logo" src="./assets/shared/logo.svg" alt="Logo" />
+        </div>
+
+        <div class="text-side">
+          <h1>A simple solution to complex tasks is coming soon</h1>
+          <p>
+            Say goodbye to inefficient juggling of multiple apps, teams, and
+            projects. Officelite is the new collaboration platform built with an
+            intuitive interface to improve productivity.
+          </p>
+          <button class="get-started">Get Started</button>
+        </div>
+        <div class="chart-side">
+          <img
+            class="chart-img"
+            src="./assets/home/illustration-charts.svg"
+            alt="Charts"
+          />
+        </div>
+      </section>
+
+      <section class="coming">
+        <div class="cards">
+          <div class="plan-card" id="basic">
+            <p>Basic</p>
+            <h1>Free</h1>
+            <h3>Up to 5 users for free</h3>
+            <h5>
+              Basic document collaboration <br> 2 gb storage  </br> Great security and
+              support
+            </h5>
+            <button>Try for Free</button>
+          </div>
+          <div class="plan-card" id="pro">
+            <p>Pro</p>
+            <h1>$9.99</h1>
+            <h3>Per user, billed monthly</h3>
+            <h5>
+              All essential integrations <br> 50 gb storage </br> More control and insights
+            </h5>
+            <button>Try for Free</button>
+          </div>
+
+          <div class="plan-card" id="ultimate">
+            <p>Ultimate</p>
+            <h1>$19.99</h1>
+            <h3>Per user, billed monthly</h3>
+            <h5>
+              Robust work management <br> 100 gb storage </br> VIP support
+            </h5>
+            <button>Try for Free</button>
+          </div>
+        </div>
+
+        <div class="coming-container">
+          <!-- <h2>Coming <span class="date"></span></h2> -->
+          <div class="timer">
+            <div class="timer-card" id="days"></div>
+            <div class="timer-card" id="hours"></div>
+            <div class="timer-card" id="minutes"></div>
+            <div class="timer-card" id="seconds"></div>
+          </div>
+          <div class="button">
+            <button>Get Started</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+
+    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+  </body>
+</html>

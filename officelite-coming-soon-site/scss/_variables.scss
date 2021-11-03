@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin dFlex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$Blue: #5175ff;
+$Darkblue: #333950;
+$Verydarkblue: #25293a;
+$Grey: #747b95;
+$Lightblue: #829cff;
+$Red: #f05b5b;
+$White: #fff;

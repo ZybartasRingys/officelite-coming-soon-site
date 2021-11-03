@@ -1,0 +1,69 @@
+.home {
+  width: 100%;
+  height: 150vh;
+  @include dFlex-center;
+  background-image: url(/assets/home/bg-pattern-header.svg);
+  background-size: 50%;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.logo-container {
+  width: 155px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+
+  .logo {
+    width: 155px;
+    height: 30px;
+  }
+}
+
+.text-side {
+  width: 100%;
+  height: 100%;
+  max-width: 540px;
+  max-height: 388px;
+  margin-right: 20px;
+
+  h1 {
+    color: $Darkblue;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $Grey;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .get-started {
+    width: 171px;
+    height: 56px;
+    background-color: $Blue;
+    color: $White;
+    border-radius: 28px;
+    border: none;
+  }
+}
+
+.chart-side {
+  width: 100%;
+  height: 100%;
+  max-width: 475px;
+  max-height: 531px;
+
+  .chart-img {
+    width: 100%;
+    height: 100%;
+    max-width: 475px;
+    max-height: 531px;
+  }
+}
