@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/scss/main.css" />
 
     <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body>
-  Work smarter. Save time.
+  </head>
+  <body>
+    <main class="sign-up-main">
+      <div class="logo-container">
+        <img class="logo" src="./assets/shared/logo.svg" alt="Logo" />
+      </div>
+      <section class="content">
+        <div class="white-side">
+          <div class="text">
+            <h1>Work smarter. Save time.</h1>
+            <p>
+              Easily manage your projects. Get on the list and receive in-app
+              perks available only to early subscribers. We are moving into
+              final development and getting ready for official launch soon.
+            </p>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+            <div class="coming-container">
+              <!-- <h2>Coming <span class="date"></span></h2> -->
+              <div class="timer">
+                <div class="timer-card-signup" id="days">
+                  <h1 class="day">47</h1>
+                  <p>days</p>
+                </div>
+                <div class="timer-card-signup" id="hours">
+                  <h1 class="hour">07</h1>
+                  <p>hours</p>
+                </div>
+                <div class="timer-card-signup" id="minutes">
+                  <h1 class="min">56</h1>
+                  <p>min</p>
+                </div>
+                <div class="timer-card-signup" id="seconds">
+                  <h1 class="sec">14</h1>
+                  <p>sec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sign-up-card">
+            <div class="card">
+              <input class="input" type="text" placeholder="Name" />
+              <input
+                class="input"
+                type="email"
+                id="email"
+                placeholder="Email"
+              />
+              <select class="input" name="" id="">
+                <ul>
+                  <option class="option" value="basic">
+                    Basic Pack <span class="placeholder">Free</span>
+                  </option>
+                  <option class="option" value="pro">
+                    Pro Pack <span class="placeholder">$9.99</span>
+                  </option>
+                  <option class="option" value="ultimate">
+                    Ultimate Pack <span class="placeholder">$19.99</span>
+                  </option>
+                </ul>
+              </select>
+              <input class="input" type="number" placeholder="Phone Number" />
+              <input class="input" type="text" placeholder="Company" />
+              <button class="get" id="submit">Get on the list</button>
+            </div>
+          </div>
+        </div>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+        <div class="dark-side"></div>
+      </section>
+    </main>
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
+    <script src="/index.js"></script>
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+    Coming 4 Nov 2020
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-</body>
+    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+    47 Days 07 Hours 56 Min 14 Sec
+  </body>
 </html>

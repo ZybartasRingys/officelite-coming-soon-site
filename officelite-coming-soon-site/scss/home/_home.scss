@@ -1,6 +1,7 @@
 .home {
   width: 100%;
-  height: 150vh;
+  height: 100%;
+  min-height: 1182px;
   @include dFlex-center;
   background-image: url(/assets/home/bg-pattern-header.svg);
   background-size: 50%;
@@ -9,11 +10,11 @@
 }
 
 .logo-container {
+  position: absolute;
   width: 155px;
   height: 30px;
-  position: absolute;
   top: 50px;
-  left: 250px;
+  left: 165px;
 
   .logo {
     width: 155px;
@@ -51,6 +52,7 @@
     color: $White;
     border-radius: 28px;
     border: none;
+    cursor: pointer;
   }
 }
 

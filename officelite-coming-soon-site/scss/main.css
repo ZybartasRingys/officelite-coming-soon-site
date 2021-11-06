@@ -8,7 +8,8 @@
 
 .home {
   width: 100%;
-  height: 150vh;
+  height: 100%;
+  min-height: 1182px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,11 +26,11 @@
 }
 
 .logo-container {
+  position: absolute;
   width: 155px;
   height: 30px;
-  position: absolute;
   top: 50px;
-  left: 250px;
+  left: 165px;
 }
 
 .logo-container .logo {
@@ -68,6 +69,7 @@
   color: #fff;
   border-radius: 28px;
   border: none;
+  cursor: pointer;
 }
 
 .chart-side {
@@ -88,8 +90,10 @@
   width: 100%;
   height: 100%;
   min-height: 603px;
-  border: 3px solid green;
-  background-color: #25293a;
+  background: url(/assets/home/bg-pattern-footer.svg), #25293a;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .cards {
@@ -168,10 +172,14 @@
   border: none;
   background-color: #829cff;
   color: #5175ff;
+  cursor: pointer;
 }
 
 .cards #pro {
-  background-color: #5175ff;
+  background: url(/assets/home/bg-pattern-pricing.svg), #5175ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   border-radius: 13px;
   -webkit-filter: drop-shadow(0 50px 50px rgba(75, 92, 154, 0.2472));
           filter: drop-shadow(0 50px 50px rgba(75, 92, 154, 0.2472));
@@ -218,6 +226,7 @@
   border: none;
   background-color: #fff;
   color: #5175ff;
+  cursor: pointer;
 }
 
 .coming-container {
@@ -229,7 +238,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coming-container .get-started {
+  width: 171px;
+  height: 56px;
+  background-color: #5175ff;
+  color: #fff;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
 }
 
 .coming-container .timer {
@@ -237,7 +261,6 @@
   height: 100%;
   max-width: 448px;
   max-height: 176px;
-  border: 2px solid red;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -250,15 +273,195 @@
   height: 100%;
   min-width: 100px;
   min-height: 128px;
-  border: 1px solid yellow;
+  text-align: center;
+  background-color: #333950;
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.coming-container .timer .timer-card .day,
+.coming-container .timer .timer-card .hour,
+.coming-container .timer .timer-card .min,
+.coming-container .timer .timer-card .sec {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.coming-container .timer .timer-card p {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.white-side {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  min-width: 540px;
+  max-height: 460px;
+  margin-left: 165px;
+}
+
+.text h1 {
+  color: #333950;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.text p {
+  color: #747b95;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.sign-up-card {
+  width: 100%;
+  height: 100%;
+  max-height: 508px;
+  max-width: 445px;
+  background-color: #fff;
+  position: relative;
+  left: 150px;
+  z-index: 1000;
+  border-radius: 13px;
+  -webkit-box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+          box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+}
+
+.sign-up-card .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border-radius: 13px;
+}
+
+.sign-up-card .card .input {
+  width: 350px;
+  height: 45px;
+  border: none;
+  border-bottom: 1px solid #747b95;
+  outline: none;
+  margin-top: 15px;
+  color: #747b95;
+  opacity: 0.5;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.sign-up-card .get {
+  width: 360px;
+  height: 56px;
+  margin-top: 40px;
+  color: #fff;
+  background-color: #829cff;
+  border: none;
+  border-radius: 28px;
+}
+
+.timer-card-signup {
+  max-width: 100px;
+  max-height: 128px;
+  text-align: center;
+  background: rgba(81, 117, 255, 0.1);
+  border-radius: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.timer-card-signup h1 {
+  color: #829cff;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 48px;
+}
+
+.timer-card-signup p {
+  margin-top: 10px;
+}
+
+.dark-side {
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/sign-up/bg-pattern-side.svg), #25293a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .main {
   width: 100%;
   height: 100%;
+}
+
+.sign-up-main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
 }
 /*# sourceMappingURL=main.css.map */
