@@ -84,11 +84,15 @@
     // margin-top: 150px;
   }
 
+  .logo-container {
+    left: 100px;
+  }
+
   .text-side {
     width: 100%;
     height: 100%;
-    max-width: 327px;
-    max-height: 378px;
+    width: 327px;
+    height: 378px;
     font-size: 40px;
     flex-direction: column;
     margin-right: 0 !important;
@@ -115,7 +119,8 @@
   .home {
     width: 100%;
     height: 100%;
-    max-height: 1202px;
+    max-height: 1000px;
+    min-height: 1000px;
     align-items: flex-start;
     margin-top: 206px;
   }
