@@ -8,6 +8,6 @@ submitbtn.addEventListener("click", emailValidation);
 
 function emailValidation(email) {
   if (emailInput.value.match(re)) {
-    emailInput.innerHTML = "Geras email";
+    
   }
 }
