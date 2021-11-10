@@ -16,7 +16,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 10px;
 
   .plan-card {
     width: 350px;
@@ -138,11 +138,26 @@
   width: 100%;
   height: 100%;
   max-width: 1110px;
-  min-height: 176px;
+  max-height: 603px;
   margin: 76px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .coming-content {
+    h2 {
+      color: $White;
+      font-style: Bold;
+      font-size: 16px;
+      line-height: 48px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    .date {
+      color: $Blue;
+    }
+  }
 
   .get-started {
     width: 171px;
@@ -211,7 +226,7 @@
     min-height: 1588px;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
     margin-top: -500px;
     margin-left: 25px;
 
@@ -228,8 +243,14 @@
     min-height: 254px;
     @include dFlex-center;
     flex-direction: column;
-    justify-content: center;
     margin-top: -60px;
+
+    .coming-content {
+      width: 100%;
+      height: 100%;
+      @include dFlex-center;
+      flex-direction: column;
+    }
 
     h2 {
       margin-bottom: 30px;
@@ -264,7 +285,7 @@
 
 // Tablet
 
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1240px) {
   .coming {
     width: 100%;
     height: 950px;
@@ -295,6 +316,13 @@
     max-height: 288px;
     display: flex;
     flex-direction: column;
+
+    .coming-content {
+      width: 100%;
+      height: 100%;
+      @include dFlex-center;
+      flex-direction: column;
+    }
   }
 }
 
