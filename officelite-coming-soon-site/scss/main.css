@@ -94,7 +94,7 @@
   max-height: 531px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 765px) {
   .home {
     width: 100%;
     min-width: 375px;
@@ -152,7 +152,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 767px) and (max-width: 1240px) {
   .home {
     width: 100%;
     height: 100%;
@@ -424,7 +424,7 @@
   color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .coming {
     width: 100%;
     height: 100%;
@@ -523,7 +523,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 767px) and (max-width: 1240px) {
   .coming {
     width: 100%;
     height: 950px;
@@ -845,7 +845,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .sign-up-logo {
     left: 110px;
   }
@@ -963,7 +963,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 767px) and (max-width: 1240px) {
   .sign-up-logo {
     left: 39px;
   }
@@ -1038,7 +1038,7 @@
   background-position: center top;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 765px) {
   .dark-side {
     width: 100%;
     height: 100%;
@@ -1046,7 +1046,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1240px) {
+@media (min-width: 767px) and (max-width: 1240px) {
   .dark-side {
     width: 100%;
     height: 337px;
