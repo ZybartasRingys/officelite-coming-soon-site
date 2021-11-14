@@ -306,7 +306,41 @@
       width: 689px;
       height: 316px !important;
       margin: 10px;
-      display: flex;
+      display: grid;
+      grid-template-areas:
+        "basic info"
+        "free info"
+        "users info"
+        "button info";
+
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-columns: 1fr;
+      text-align: start;
+      p {
+        margin-left: 47px;
+        grid-area: basic;
+      }
+      h1 {
+        margin-left: 47px;
+        margin-top: 0px !important;
+        grid-area: free;
+      }
+      h3 {
+        margin-left: 47px;
+        grid-area: users;
+      }
+
+      h5 {
+        margin-top: 95px !important;
+        margin-right: 67px;
+        grid-area: info;
+      }
+
+      button {
+        margin-left: 47px;
+        margin-top: 0 !important;
+        grid-area: button;
+      }
     }
   }
 

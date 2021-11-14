@@ -1,23 +1,32 @@
-.content {
-  border: 1px solid black;
-  width: 100%;
-  height: 100vh;
+.sign-up-logo {
+  position: absolute;
+  width: 155px;
+  height: 30px;
+  left: 210px;
+  top: 81px;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
 .white-side {
   width: 100%;
   height: 100vh;
   //   max-width: 1020px;
   background-color: $White;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   width: 100%;
   height: 100%;
-  max-width: 540px;
-  max-height: 460px;
-  margin-left: 165px;
+  width: 540px;
+  max-height: 236px;
+  margin-left: 270px;
+  margin-top: -170px;
 
   h1 {
     color: $Darkblue;
@@ -34,6 +43,55 @@
   }
 }
 
+.sign-up-coming-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  h2 {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    .date {
+      color: $Blue;
+    }
+  }
+
+  .timer {
+    width: 448px;
+    height: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+  }
+
+  .timer-card-signup {
+    width: 100px;
+    height: 128px;
+    text-align: center;
+    background: rgba(81, 117, 255, 0.1);
+    border-radius: 13px;
+    @include dFlex-center;
+    flex-direction: column;
+
+    h1 {
+      color: $Blue;
+      font-weight: bold;
+      font-size: 56px;
+      line-height: 48px;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
 .sign-up-card {
   width: 100%;
   height: 100%;
@@ -41,7 +99,7 @@
   max-width: 445px;
   background-color: $White;
   position: relative;
-  left: 150px;
+  left: 120px;
   z-index: 1000;
   border-radius: 13px;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
@@ -64,6 +122,47 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 28px;
+      appearance: none;
+    }
+
+    .option {
+      color: $Darkblue;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    #email {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      // color: #f05b5b;
+    }
+
+    .error {
+      position: absolute;
+      right: 60px;
+      top: 105px;
+      display: none;
+    }
+
+    .error.active {
+      display: block;
+    }
+
+    .arrow {
+      position: absolute;
+      right: 60px;
+      top: 160px;
+      z-index: 600;
+      transition: all 0.3s;
+    }
+
+    .arrow.active {
+      transform: rotate(180deg);
+      transition: all 0.3s;
     }
   }
 
@@ -75,33 +174,17 @@
     background-color: $Blue;
     border: none;
     border-radius: 28px;
-  }
-}
-
-.timer-card-signup {
-  max-width: 100px;
-  max-height: 128px;
-  text-align: center;
-  background: rgba(81, 117, 255, 0.1);
-  border-radius: 13px;
-  @include dFlex-center;
-  flex-direction: column;
-
-  h1 {
-    color: $Lightblue;
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 48px;
-  }
-
-  p {
-    margin-top: 10px;
+    cursor: pointer;
   }
 }
 
 // Mobile
 
 @media (max-width: 768px) {
+  .sign-up-logo {
+    left: 110px;
+  }
+
   .content {
     width: 100%;
     height: 100%;
@@ -114,12 +197,14 @@
   .white-side {
     width: 100%;
     height: 100%;
+    max-width: 375px;
     max-height: 915px !important;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     padding: 15px;
-    padding-top: 166px;
+    padding-top: 150px;
     background-image: url(/assets/home/bg-pattern-header.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -128,17 +213,41 @@
     .text {
       width: 100%;
       height: 100%;
-      max-width: 375px;
-      padding: 0 10px;
+      max-width: 327px !important;
+      padding: 20px;
       margin: 0;
 
       h1 {
         font-size: 40px !important;
+      }
+
+      p {
+        font-size: 16px;
         margin-bottom: 20px;
       }
 
       .coming-container {
         margin-top: 50px;
+      }
+    }
+
+    .sign-up-coming-container {
+      width: 328px;
+      height: 158px;
+      margin: 0px !important;
+      margin-right: 0px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .timer {
+        width: 328px;
+        height: 92px;
+      }
+
+      .timer-card-signup {
+        width: 72px;
+        height: 92px;
       }
     }
 
@@ -148,7 +257,7 @@
       max-width: 375px;
       max-height: 465px;
       left: 0;
-      top: 220px;
+      top: 260px;
 
       .card {
         padding: 0;
@@ -166,12 +275,25 @@
     .input {
       width: 279px !important;
     }
+
+    .error {
+      right: 60px;
+      top: 73px !important;
+    }
+
+    .arrow {
+      top: 127px !important;
+    }
   }
 }
 
 // Tablet
 
-@media (min-width: 768px) and (max-width: 1435px) {
+@media (min-width: 768px) and (max-width: 1240px) {
+  .sign-up-logo {
+    left: 39px;
+  }
+
   .content {
     width: 100%;
     height: 100%;
@@ -185,14 +307,15 @@
     max-height: 945px;
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
 
     .text {
       width: 572px;
+      margin-top: 206px;
       margin-left: 0;
       display: flex;
       flex-direction: column;
       text-align: center;
+      align-items: center;
 
       h1 {
         font-size: 40px;
@@ -205,12 +328,17 @@
     .timer-card-signup {
       max-width: 100px;
       max-height: 128px;
+
+      h1 {
+        margin-bottom: 0;
+      }
     }
   }
 
   .sign-up-card {
     width: 445px;
     height: 508px;
+    padding-left: 15px;
     left: 0;
     bottom: -200px;
     .card {

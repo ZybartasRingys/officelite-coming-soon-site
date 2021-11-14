@@ -16,7 +16,7 @@
   </head>
   <body>
     <main class="sign-up-main">
-      <div class="logo-container">
+      <div class="sign-up-logo">
         <img class="logo" src="./assets/shared/logo.svg" alt="Logo" />
       </div>
       <section class="content">
@@ -29,7 +29,7 @@
               final development and getting ready for official launch soon.
             </p>
 
-            <div class="coming-container">
+            <div class="sign-up-coming-container">
               <h2>Coming <span class="date">4 nov 2020</span></h2>
               <div class="timer">
                 <div class="timer-card-signup" id="days">
@@ -53,29 +53,43 @@
           </div>
           <div class="sign-up-card">
             <div class="card">
-              <input class="input" type="text" placeholder="Name" />
-              <input
-                class="input"
-                type="email"
-                id="email"
-                placeholder="Email"
-              />
-              <select class="input" name="" id="">
-                <ul>
-                  <option class="option" value="basic">
-                    Basic Pack <span class="placeholder">Free</span>
-                  </option>
-                  <option class="option" value="pro">
-                    Pro Pack <span class="placeholder">$9.99</span>
-                  </option>
-                  <option class="option" value="ultimate">
-                    Ultimate Pack <span class="placeholder">$19.99</span>
-                  </option>
-                </ul>
-              </select>
-              <input class="input" type="number" placeholder="Phone Number" />
-              <input class="input" type="text" placeholder="Company" />
-              <button class="get" id="submit">Get on the list</button>
+              <form action="" id="form">
+                <input
+                  class="input"
+                  type="text"
+                  required="required"
+                  placeholder="Name"
+                />
+                <input
+                  class="input"
+                  type="text"
+                  id="email"
+                  placeholder="Email"
+                  onkeydown="emailValidation()"
+                />
+                <div class="error" id="error-msg">
+                  <img src="/assets/sign-up/icon-cross.svg" alt="" />
+                </div>
+                <div class="arrow" id="arrow">
+                  <img src="/assets/sign-up/icon-arrow-down.svg" alt="" />
+                </div>
+                <select class="input" name="" id="select">
+                  <ul>
+                    <option class="option" value="basic">
+                      Basic Pack <span class="price">Free</span>
+                    </option>
+                    <option class="option" value="pro">
+                      Pro Pack <span class="price">$9.99</span>
+                    </option>
+                    <option class="option" value="ultimate">
+                      Ultimate Pack <span class="price">$19.99</span>
+                    </option>
+                  </ul>
+                </select>
+                <input class="input" type="number" placeholder="Phone Number" />
+                <input class="input" type="text" placeholder="Company" />
+                <button class="get" id="submit">Get on the list</button>
+              </form>
             </div>
           </div>
         </div>
